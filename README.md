@@ -1,5 +1,5 @@
 # portfolioadarsh
 
 
-Github Io Link:
+Link:
 https://yousant.github.io/portfolioadarsh/
