@@ -71,18 +71,15 @@
 
 
 
+a {
+    text-decoration: none;
+}
 
 .nav-items div:hover {
     transition: 0.8s;
     font-weight: bold;
 }
 */
-
-
-a {
-    text-decoration: none;
-}
-
 
 .header{
     position: fixed;
