@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Be Vietnam Pro", sans-serif;
 }
@@ -20,33 +21,35 @@
     margin: 0px auto;
 }
 
+/*
 .navbar {
-    width: 2000px;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     z-index: 1;
-    padding-top: 1rem;
-    left: -25%;
+    padding-top: 1rem; 
+    
+    background-color: rgb(66, 66, 66);
 
-    /* transform: translate(-15%, -30%); */
-
-    /* padding-left: 1rem; */
+    
 
 }
+
 .logo-text {
-    padding: 0.5rem;
-    margin-left: 2rem;
+    padding : 0.5rem;
+    margin-left: 1rem;
+    align-items:center;
     font-size: 20px;
     color: gray;
 }
 
 .nav-items {
     display: flex;
+
     gap: 5rem;
     padding: 0 4em;
-    /* padding-left: 75%; */
 }
 
 
@@ -62,6 +65,12 @@
 }
 
 
+.navbarScroll.navbarDark {
+    background-color: rgb(66, 66, 66);
+}
+
+
+
 a {
     text-decoration: none;
 }
@@ -69,6 +78,44 @@ a {
 .nav-items div:hover {
     transition: 0.8s;
     font-weight: bold;
+}
+*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: rgb(186, 186, 186);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-text{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.logo-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a{
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(219, 219, 219);
 }
 
 
@@ -229,7 +276,7 @@ a {
 }
 
 #project1 {
-    background-image: url(./images/ecommerce.jpg);
+    background-image: url(./images/news.webp);
 }
 #project2 {
     margin-left: 120px;
@@ -560,7 +607,3 @@ a {
     padding-left: 6%;
     padding-right: 6%; */
 } 
-
-.navbarScroll.navbarDark {
-    background-color: rgb(66, 66, 66);
-}
